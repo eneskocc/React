@@ -12,7 +12,7 @@ export class TodoForm extends React.Component{
     var inp=document.getElementById('todoInput');
     var val =inp.value;
     inp.value='';
-    this.props.addTask(val);
+    this.props.addTasks(val);
   }
   render(){
     return(
