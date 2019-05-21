@@ -23,6 +23,7 @@ export class Todolist extends React.Component{
     activeBtn.classList.add('active');
 
   };
+
   render(){
     let items_left=0;
     const items=this.props.myTasks.map((elem,i)=>{
@@ -43,6 +44,7 @@ export class Todolist extends React.Component{
             )
           }
     });
+    
     return(
       <div>
         <div className="todo-list">
@@ -63,7 +65,6 @@ export class Todolist extends React.Component{
           </div>
         </div>
       </div>
-
     )
   }
 }
