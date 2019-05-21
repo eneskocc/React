@@ -6,7 +6,6 @@ export class TodoForm extends React.Component{
     this.addTask=this.addTask.bind(this);
    }
 
-
   addTask(e){
     e.preventDefault();
     var inp=document.getElementById('todoInput');
@@ -14,6 +13,7 @@ export class TodoForm extends React.Component{
     inp.value='';
     this.props.addTasks(val);
   }
+
   render(){
     return(
       <div>
